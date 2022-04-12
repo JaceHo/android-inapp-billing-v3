@@ -1167,7 +1167,7 @@ public class BillingProcessor extends BillingBase
 								}
 								else
 								{
-									reportBillingError(Constants.BILLING_ERROR_FAILED_TO_ACKNOWLEDGE_PURCHASE, null);
+									reportBillingError(billingResult.getResponseCode(), null);
 								}
 							}
 						});
